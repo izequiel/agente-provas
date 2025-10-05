@@ -1,0 +1,25 @@
+{
+  "titulo": "Computação Paralela e Concorrente",
+  "topicos": [
+    {
+      "titulo": "Conceito de Computação Concorrente",
+      "conteudo": "Computação concorrente envolve a execução de múltiplas tarefas que podem ser intercaladas no tempo, compartilhando recursos do sistema. Ela é comum em sistemas multitarefa e aplicações que lidam com múltiplos fluxos de dados simultaneamente."
+    },
+    {
+      "titulo": "Conceito de Computação Paralela",
+      "conteudo": "Computação paralela refere-se à execução simultânea de múltiplas tarefas em diferentes núcleos ou processadores. É usada para acelerar o processamento de grandes volumes de dados ou cálculos complexos."
+    },
+    {
+      "titulo": "Diferenças entre Concorrência e Paralelismo",
+      "conteudo": "Concorrência trata da estruturação de tarefas que podem ser executadas em ordem variável, enquanto paralelismo trata da execução real simultânea. Concorrência pode ocorrer em um único núcleo, enquanto paralelismo exige múltiplos núcleos."
+    },
+    {
+      "titulo": "Modelos de Programação Concorrente",
+      "conteudo": "Incluem threads, processos, corrotinas e eventos assíncronos. Cada modelo possui vantagens e desafios relacionados à sincronização, escalabilidade e complexidade."
+    },
+    {
+      "titulo": "Desafios da Computação Paralela",
+      "conteudo": "Incluem sincronização entre threads, divisão eficiente de tarefas, comunicação entre processos e evitar condições de corrida. O desempenho depende da arquitetura e da eficiência do algoritmo paralelo."
+    }
+  ]
+}
