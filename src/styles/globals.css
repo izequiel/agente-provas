@@ -92,3 +92,24 @@ input[type="file"] {
 .questao-card li {
   padding: 0.3rem 0;
 }
+
+/* Tela de Login*/
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.6rem;
+  margin: 0.5rem auto;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  display: block;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #2c3e50;
+  outline: none;
+}

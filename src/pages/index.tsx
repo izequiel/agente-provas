@@ -1,6 +1,7 @@
 // npm run dev
 import Head from 'next/head';
 import { useState } from 'react';
+import { getSession } from 'next-auth/react';
 import UploadForm from '../components/UploadForm';
 import QuestaoCard from '../components/QuestaoCard';
 
@@ -42,4 +43,18 @@ export default function Home() {
       </main>
     </>
   );
+}
+
+// 🔐 Protege a página principal
+export async function getServerSideProps(context: any) {
+  const session = await getSession(context);
+  if (!session) {
+    return {
+      redirect: {
+        destination: '/login',
+        permanent: false,
+      },
+    };
+  }
+  return { props: {} };
 }
