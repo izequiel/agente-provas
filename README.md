@@ -1,6 +1,22 @@
 # 🧠 Agente de Provas
 Gere questões de múltipla escolha automaticamente com Inteligência Artificial a partir de arquivos JSON com conteúdo didático.
 
+## 🚀 Funcionalidades
+- Upload de arquivos .json com tópicos e conteúdos
+- Campo de prompt personalizado para instruções específicas
+- Geração de questões com IA (via OpenAI GPT-4)
+- Autenticação via NextAuth
+- Interface protegida para usuários logados
+- Exibição das questões geradas com destaque para a resposta correta
+
+## 📦 Tecnologias utilizadas
+- Next.js
+- React
+- NextAuth
+- OpenAI API
+- TypeScript
+- Formidable (upload de arquivos)
+
 ## 🧪 Iniciando Projeto 
 
 Primeiramente, vá a raiz do projeto no VS Code e rode o seguinte comando no terminal:
