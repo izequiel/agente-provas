@@ -36,7 +36,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       }
 
       const texto = json.topicos
-        .map((t: any) => `${t.titulo}: ${t.conteudo}`)
+        .map((t: JSON) => `${t.titulo}: ${t.conteudo}`)
         .join('\n\n');
 
       const prompt = `
