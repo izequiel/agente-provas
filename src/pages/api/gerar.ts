@@ -3,6 +3,12 @@ import OpenAI from 'openai';
 import formidable from 'formidable';
 import fs from 'fs';
 
+// Definição de tipo para o objeto "topico" esperado no JSON de entrada.
+type Topico = {
+  titulo: string;
+  conteudo: string;
+};
+
 export const config = {
   api: {
     bodyParser: false,
@@ -36,7 +42,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       }
 
       const texto = json.topicos
-        .map((t: JSON) => `${t.titulo}: ${t.conteudo}`)
+        // .map((t: JSON) => `${t.titulo}: ${t.conteudo}`) <-- Erro aqui
+        .map((t: Topico) => `${t.titulo}: ${t.conteudo}`) // <--- CORRIGIDO
         .join('\n\n');
 
       const prompt = `
