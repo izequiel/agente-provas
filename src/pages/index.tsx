@@ -2,7 +2,7 @@
 import Head from 'next/head';
 import { useState } from 'react';
 import { getSession } from 'next-auth/react';
-import { GetServerSidePropsContext } from 'next'; // <-- 🛠️ NOVO: Importação do tipo
+import { GetServerSidePropsContext } from 'next'; 
 import UploadForm from '../components/UploadForm';
 import QuestaoCard from '../components/QuestaoCard';
 
@@ -47,7 +47,7 @@ export default function Home() {
 }
 
 // 🔐 Protege a página principal
-export async function getServerSideProps(context: GetServerSidePropsContext) { // <-- 🛠️ CORREÇÃO: Tipo 'any' substituído
+export async function getServerSideProps(context: GetServerSidePropsContext) { 
   const session = await getSession(context);
   if (!session) {
     return {
