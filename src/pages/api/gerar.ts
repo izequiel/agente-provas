@@ -21,7 +21,7 @@ export const config = {
   },
 };
 
-const GEMINI_API_KEY = 'AIzaSyBQiKE0ld9y_8axXwdHt6eLpHtGiNJWZOQ';
+const GEMINI_API_KEY = '';
 const genAI = new GoogleGenerativeAI(GEMINI_API_KEY)
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
